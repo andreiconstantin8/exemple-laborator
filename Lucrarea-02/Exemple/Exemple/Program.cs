@@ -1,9 +1,8 @@
-﻿using Exemple.Domain.Models;
+﻿using Exemple.Domain;
 using System;
 using System.Collections.Generic;
-using static Exemple.Domain.Models.ExamGrades;
-using static Exemple.Domain.ExamGradesOperation;
-using Exemple.Domain;
+using static Exemple.Domain.ShoppingCart;
+using static Exemple.Domain.ShoppingCartOperation;
 
 namespace Exemple
 {
@@ -13,55 +12,68 @@ namespace Exemple
 
         static void Main(string[] args)
         {
-            var listOfGrades = ReadListOfGrades().ToArray();
-            PublishGradesCommand command = new(listOfGrades);
-            PublishGradeWorkflow workflow = new PublishGradeWorkflow();
-            var result = workflow.Execute(command, (registrationNumber) => true);
+            var listOfProductID = ReadListOfProduct().ToArray();
+            PublishShoppingCartCommand command = new(listOfProductID);
+            PublishCartWorkflow workflow = new PublishCartWorkflow();
+            var result = workflow.Execute(command, (productID) => true);
 
             result.Match(
-                    whenExamGradesPublishFaildEvent: @event =>
-                    {
-                        Console.WriteLine($"Publish failed: {@event.Reason}");
-                        return @event;
-                    },
-                    whenExamGradesPublishScucceededEvent: @event =>
-                    {
-                        Console.WriteLine($"Publish succeeded.");
-                        Console.WriteLine(@event.Csv);
-                        return @event;
-                    }
-                );
+                whenShoppingCartPublishFaildEvent: @event =>
+                {
+                    Console.WriteLine($"Publish failed: {@event.Reason }");
+                    return @event;
+                },
+                whenShoppingCartPublishSucceededEvent: @event =>
+                {
+                    Console.WriteLine($"Publish succeded.");
+                    Console.WriteLine(@event.Csv);
+                    return @event;
+                }
+           );
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Goodbye!");
         }
 
-        private static List<UnvalidatedStudentGrade> ReadListOfGrades()
+        private static List<UnvalidatedCart> ReadListOfProduct()
         {
-            List <UnvalidatedStudentGrade> listOfGrades = new();
+            List<UnvalidatedCart> listOfProducts = new();
             do
             {
-                //read registration number and grade and create a list of greads
-                var registrationNumber = ReadValue("Registration Number: ");
-                if (string.IsNullOrEmpty(registrationNumber))
+                var ProductID = ReadValue("Product ID: ");
+                if (string.IsNullOrEmpty(ProductID))
                 {
                     break;
                 }
 
-                var examGrade = ReadValue("Exam Grade: ");
-                if (string.IsNullOrEmpty(examGrade))
+                var Adress = ReadValue("Adress: ");
+                if (string.IsNullOrEmpty(Adress))
                 {
                     break;
                 }
 
-                var activityGrade = ReadValue("Activity Grade: ");
-                if (string.IsNullOrEmpty(activityGrade))
+                var Amount = ReadValue("Amount: ");
+                if (string.IsNullOrEmpty(Amount))
                 {
                     break;
                 }
 
-                listOfGrades.Add(new (registrationNumber, examGrade, activityGrade));
+                var Price = ReadValue("Price: ");
+                if (string.IsNullOrEmpty(Price))
+                {
+                    break;
+                }
+
+                listOfProducts.Add(new(ProductID, Amount,Adress, Price));
+
+                string check = ReadValue("Keep shopping (Y/N) ? - ");
+
+                if (check.Contains('N'))
+                {
+                    break;
+                }
+                
             } while (true);
-            return listOfGrades;
+            return listOfProducts;
         }
 
         private static string? ReadValue(string prompt)
