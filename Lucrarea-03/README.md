@@ -1,8 +1,8 @@
-# Lucrarea 3: Implementarea unui „workflow” DDD 
+# Lucrarea 1: Crearea unui sistem de tipuri pentru un model Domain Driven Design (DDD) 
 
 **Context**: căruciorul de cumpărături pentru un magazin virtual. 
 
-**Obiective**: reprezentarea valorilor opționale, tratarea erorilor
+**Obiective**: înțelegerea tipului de date choice/discriminated union [1,2], înțelegerea conceptelor de value type și entity type, construirea unui sistem de tipuri [3] specific pentru un anumit domeniu 
 
 **Sarcina 1**
 
@@ -10,13 +10,13 @@ Analizați și rulați soluția din directorul exemple. Identificați elementele
 
 **Sarcina 2**
 
-În contextul workflow-ului pentru plasarea unei comenzi folosiți:
-* Option < T > [4] pentru a reprezenta rezultatul conversiei de la string la codul produsului, respectiv cantitatea
-* Try < T >[5] sau TryAsync < T >[6] pentru a reprezenta rezultatele următoarelor funcții
-    * verificarea existenței produsului pe baza codului de produs
-    * verificarea stocului
-    * verificarea adresei de livrare
-* folositi expresii LINQ pentru a combina mai multe rezultate de tipul Option < T >, respectiv mai multe rezultate de tipul Try < T >/TryAsync < T >. Folosiți tipul Either/EitherAsync pentru a putea combina tipuri diferite de rezultate.
+Implementarea unui sistem de tipuri pentru a reprezenta un cărucior de cumpărături și realizarea unei aplicații consolă care să folosească acele tipuri. 
+Sistemul de tipuri trebuie să folosească: 
+* un choice type pentru a reprezenta un cărucior în următoarele stările: gol, nevalidat, validate, plătit.  
+* value type pentru a reprezenta cantitatea produselor comandate, codul produsului, adresa 
+* entity type pentru a reprezenta căruciorul de cumpărături, clientul 
+
+Aplicația consolă trebuie să permită crearea unui cărucior gol, adăugarea de produse în cărucior, trecerea unui cărucior dintr-o stare în altă fără a aplica validări. 
 
 **Referințe**
 
@@ -25,6 +25,3 @@ Analizați și rulați soluția din directorul exemple. Identificați elementele
 [2] https://www.nuget.org/packages/CSharp.Choices/
 
 [3] Scott Wlaschin, [Domain Modeling Made Functional](https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven-ebook/dp/B07B44BPFB/ref=sr_1_1?dchild=1&keywords=Domain+Modeling+Made+Functional&qid=1632338254&sr=8-1), Pragmatic Bookshelf, 2018  
-[4] https://github.com/louthy/language-ext#option
-[5] https://louthy.github.io/language-ext/LanguageExt.Core/LanguageExt/Try_A.htm
-[6] https://louthy.github.io/language-ext/LanguageExt.Core/LanguageExt/TryAsync_A.htm
