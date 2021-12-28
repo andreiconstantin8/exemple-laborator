@@ -1,0 +1,4 @@
+S:\Desktop\Lucrarea-06\Exemple\Example.Accomodation.EventProcessor\obj\Debug\net5.0\Exemple..Accomodation.EventProcessor.GeneratedMSBuildEditorConfig.editorconfig
+S:\Desktop\Lucrarea-06\Exemple\Example.Accomodation.EventProcessor\obj\Debug\net5.0\Exemple..Accomodation.EventProcessor.AssemblyInfoInputs.cache
+S:\Desktop\Lucrarea-06\Exemple\Example.Accomodation.EventProcessor\obj\Debug\net5.0\Exemple..Accomodation.EventProcessor.AssemblyInfo.cs
+S:\Desktop\Lucrarea-06\Exemple\Example.Accomodation.EventProcessor\obj\Debug\net5.0\Exemple..Accomodation.EventProcessor.csproj.CoreCompileInputs.cache

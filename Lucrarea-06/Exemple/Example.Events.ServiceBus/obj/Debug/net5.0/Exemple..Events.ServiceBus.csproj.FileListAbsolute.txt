@@ -1,0 +1,5 @@
+S:\Desktop\Lucrarea-06\Exemple\Example.Events.ServiceBus\obj\Debug\net5.0\Exemple..Events.ServiceBus.csproj.AssemblyReference.cache
+S:\Desktop\Lucrarea-06\Exemple\Example.Events.ServiceBus\obj\Debug\net5.0\Exemple..Events.ServiceBus.GeneratedMSBuildEditorConfig.editorconfig
+S:\Desktop\Lucrarea-06\Exemple\Example.Events.ServiceBus\obj\Debug\net5.0\Exemple..Events.ServiceBus.AssemblyInfoInputs.cache
+S:\Desktop\Lucrarea-06\Exemple\Example.Events.ServiceBus\obj\Debug\net5.0\Exemple..Events.ServiceBus.AssemblyInfo.cs
+S:\Desktop\Lucrarea-06\Exemple\Example.Events.ServiceBus\obj\Debug\net5.0\Exemple..Events.ServiceBus.csproj.CoreCompileInputs.cache

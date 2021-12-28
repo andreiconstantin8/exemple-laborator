@@ -1,0 +1,17 @@
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\bin\Debug\net5.0\Exemple.Data.deps.json
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\bin\Debug\net5.0\Exemple.Data.dll
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\bin\Debug\net5.0\ref\Exemple.Data.dll
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\bin\Debug\net5.0\Exemple.Data.pdb
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\bin\Debug\net5.0\Exemple.Domain.dll
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\bin\Debug\net5.0\Exemple.Events.dll
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\bin\Debug\net5.0\Exemple.Domain.pdb
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\bin\Debug\net5.0\Exemple.Events.pdb
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\obj\Debug\net5.0\Exemple.Data.csproj.AssemblyReference.cache
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\obj\Debug\net5.0\Exemple.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\obj\Debug\net5.0\Exemple.Data.AssemblyInfoInputs.cache
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\obj\Debug\net5.0\Exemple.Data.AssemblyInfo.cs
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\obj\Debug\net5.0\Exemple.Data.csproj.CoreCompileInputs.cache
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\obj\Debug\net5.0\Exemple.Data.csproj.CopyComplete
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\obj\Debug\net5.0\Exemple.Data.dll
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\obj\Debug\net5.0\ref\Exemple.Data.dll
+C:\Users\ANA\Desktop\pssc_tema\PSSC\Lucrarea-06\Exemple\Exemple.Data\obj\Debug\net5.0\Exemple.Data.pdb
